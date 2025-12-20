@@ -128,3 +128,7 @@ OF_TWRP_COMPATIBILITY_MODE := 1
 FOX_MAINTAINER_PATCH_VERSION := "1096"
 OF_MAINTAINER := miyako
 FOX_ENABLE_APP_MANAGER := 1
+FOX_RECOVERY_INSTALL_PARTITION := "/dev/block/bootdevice/by-name/recovery"
+FOX_RECOVERY_SYSTEM_PARTITION := "/dev/block/bootdevice/by-name/system"
+FOX_RECOVERY_VENDOR_PARTITION := "/dev/block/bootdevice/by-name/vendor"
+FOX_RECOVERY_BOOT_PARTITION := "/dev/block/bootdevice/by-name/boot"
