@@ -3,8 +3,8 @@
 /vendor       ext4     /dev/block/bootdevice/by-name/vendor       flags=display="vendor";
 /data         ext4     /dev/block/bootdevice/by-name/userdata     flags=display="data";
 /sdcard       vfat     /dev/block/mmcblk1p1                       flags=display="sdcard";
-/boot         emmc     /dev/block/bootdevice/by-name/boot         flags=display="boot";backup=1;flashimg=1;logical;
-/recovery     emmc     /dev/block/bootdevice/by-name/recovery     flags=display="recovery";backup=1;flashimg=1;logical;
-/misc         emmc     /dev/block/bootdevice/by-name/misc         flags=display=misc;backup=1;flashimg=1;logical;
-/usb_otg      atuo     /dev/block/sdd1 /dev/block/sdd             flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8";
+/boot         emmc     /dev/block/bootdevice/by-name/boot         flags=display="boot";backup=1;flashimg=1;
+/recovery     emmc     /dev/block/bootdevice/by-name/recovery     flags=display="recovery";backup=1;flashimg=1;
+/misc         emmc     /dev/block/bootdevice/by-name/misc         flags=display=misc;backup=1;flashimg=1;
+/usb_otg      ext4     /dev/block/sdd1 /dev/block/sdd             flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8";
 /external_sd  vfat     /dev/block/mmcblk0p1 /dev/block/mmcblk0    flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8";
